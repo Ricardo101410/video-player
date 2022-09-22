@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <video class="video" id="video" poster="/assets/images/poster.jpg"  muted src="/assets/videos/lofi.mp4" width="400px" ></video>
+            <h2 class="player-title">Musica para programar</h2>
+            <div class="display-overlay">
+                <div class="player-action">
+                    <button class="button" id="backward" aria-label="boton atras 10 segundos" title="atrasar 10 segundos"></button>
+                    <button class="button" id="play" aria-label="reproducir" title="reproducir"></button>
+                    <button class="button" id="pause" hidden aria-label="pausado" title="pausar"></button>
+                    <button class="button" id="forward" aria-label="adelantar 10 segundos" title="adelantar 10 segundos"></button>
+                </div>
+                <div class="player_progress">
+                    <input type="range" id="progress" min="0" value="0" max="100" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        <script src="javascript.js"></script>
+</body>
+</html>
